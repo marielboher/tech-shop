@@ -7,7 +7,8 @@ const saveLocal = () => {
 const cart = (producto) => {
   const {imagen, marca, nombre, color, precio, id} = producto
   return `
-  <div class="prod">
+  <div class="prod" data-aos="fade-up"
+  data-aos-anchor-placement="top-bottom">
   <div class="cont-img">
   <img src=${imagen}>
   </div>

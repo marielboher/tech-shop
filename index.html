@@ -13,8 +13,10 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://kit.fontawesome.com/0408f82cf7.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/estilos.css" />
   <title>Tech-Shop | Inicio</title>
 </head>
@@ -46,7 +48,7 @@
   <div class="container">
     <div class="row ">
       <div class="col hero">
-        <div class="text-hero">
+        <div class="text-hero  animate__animated animate__fadeInDown">
           <h4>¡Bienvenidos!</h4>
           <h2>Ofertas de gran valor</h2>
           <h1>En todos los productos!</h1>
@@ -54,11 +56,11 @@
           <button><a href="./shop.html">Comprar Ahora</a></button>
         </div>
       </div>
-      <div class="img col">
+      <div class="img col animate__animated animate__fadeIn">
         <img src="./multimedia/auris.png" class="auris" />
       </div>
     </div>
-    <div class="destacadas section-p1">
+    <div class="destacadas section-p1" data-aos="fade-up" data-aos-duration="1500">
       <div class="dest-box">
         <img src="./multimedia/enviogratis.svg" />
         <h6>Envio Gratis</h6>
@@ -80,7 +82,7 @@
     <div class="prod-des product1 section-p1">
       <h2>Productos Destacados</h2>
       <p>Auriculares</p>
-      <div class="pro-container">
+      <div class="pro-container" data-aos="fade-up" data-aos-duration="1500">
         <div class="card prod-i">
           <div class="cont-img">
             <img src="./multimedia/aurisplata.webp" />
@@ -187,6 +189,10 @@
       <p>© 2022, Creado y Diseñado por Mariel Boher</p>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
