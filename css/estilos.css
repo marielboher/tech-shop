@@ -7,6 +7,8 @@
 html {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+
 }
 
 h1 {
@@ -374,7 +376,6 @@ footer h4 {
 
 footer p {
   font-size: 13px;
-  margin: 0 0 8px 0;
 }
 
 footer a {
@@ -700,26 +701,7 @@ footer a:hover {
   color: #ffff;
 }
 
-.sumar{
-  margin-left: 5px;
-  border: none;
-  width: 15px;
-  height: 20px;
-  background-color: transparent;
-  cursor: pointer;
-  color: #088170;
-  font-size: 15px;
-}
-.restar{
-  margin-right: 5px;
-  border: none;
-  width: 15px;
-  height: 20px;
-  background-color: transparent;
-  cursor: pointer;
-  color: #088170;
-  font-size: 15px;
-}
+
 
 
 /* queries */
@@ -758,16 +740,20 @@ footer a:hover {
   .hero {
     height: 90vh;
     width: 100%;
-    padding: 0 80px;
+    margin-left: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #e3e6f3;
+    padding-top: 25px;
   }
 
   .auris {
-    height: 300px;
+    display: none;
+  }
+  .img{
+    display: none;
   }
 
   .text-hero h4 {
@@ -778,9 +764,21 @@ footer a:hover {
     color: #088170;
   }
 
+  
   .text-hero button {
+    background-image: url("../multimedia/button.png");
+    background-color: transparent;
+    border: 0;
+    padding: 4px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
     font-weight: 600;
     font-size: 14px;
+  }
+  
+  .text-hero button a {
+    text-decoration: none;
+    color: #088170;
   }
 
   /* destacadas */
@@ -788,8 +786,8 @@ footer a:hover {
   .destacadas {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap:wrap;
   }
 
   .destacadas .dest-box {
@@ -799,7 +797,8 @@ footer a:hover {
 
   .section-p1 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding: 20px 30px;
   }
 
   .pro-container {
@@ -1082,12 +1081,26 @@ footer a:hover {
 @media screen and (max-width: 500px) {
 
   .hero {
-    padding: 40px;
+    padding-left: 50px;
     background-position: 55%;
   }
 
-  img {
-    margin-right: 150px;
+  .img {
+    display: none;
+  }
+  .text-hero button {
+    padding: 12px 80px 14px 65px;
+  }
+
+  .destacadas .dest-box {
+    width: 155px;
+    margin: 0 0 15px 0;
+  }
+  .destacadas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .destacadas .dest-box {
@@ -1123,7 +1136,7 @@ footer a:hover {
   }
 
   .prod-i {
-    width: 90%;
+    width: 50%;
     height: 350px;
     border: 1px solid #cce7d0;
   }
@@ -1193,24 +1206,13 @@ footer a:hover {
 @media screen and (max-width: 480px) {
 
   .hero {
-    padding: 40px;
+    padding: 0px;
     background-position: 55%;
-
   }
 
   .img {
-    height: 25vh;
-    width: 100%;
-    padding: 0 0px;
-    display: flex;
-    align-items: center;
-    margin-left: 80px;
+    display: none;
   }
-
-  .auris {
-    height: 200px;
-  }
-
 
   .destacadas .dest-box {
     width: 155px;
@@ -1245,7 +1247,7 @@ footer a:hover {
   }
 
   .prod-i {
-    width: 90%;
+    width: 70%;
     height: 350px;
     border: 1px solid #cce7d0;
 
@@ -1360,8 +1362,13 @@ footer a:hover {
     text-align: center;
   }
 
+  .section-p1{
+    padding: 0px;
+  }
   .table-c{
-    margin-left: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .table{
     font-size: 13px;
@@ -1383,11 +1390,11 @@ footer a:hover {
     text-align: center;
   }
   #cart table {
-    width: 100%;
+    width: 50%;
   }
 
   #cart table img {
-    width: 80px;
+    width: 50%;
   }
 
   #cart table td:nth-child(1) {
@@ -1398,20 +1405,30 @@ footer a:hover {
   #cart table td:nth-child(2) {
     width: 100px;
     text-align: center;
+    margin-left: 60px;
   }
 
   #cart table td:nth-child(3) {
     width: 100px;
     text-align: center;
     color: #088170;
+    margin-left: 60px;
+
   }
 
   #cart table td:nth-child(4) {
     width: 100px;
     text-align: center;
+    margin-left: 60px;
   }
 
   #cart table td:nth-child(5) {
+    width: 200px;
+    text-align: center;
+    border-bottom: 2px solid #465b52;
+    margin-left: 12px;
+  }
+  #cart table td:nth-child(6) {
     width: 100px;
     text-align: center;
     border-bottom: 2px solid #465b52;
@@ -1421,6 +1438,7 @@ footer a:hover {
     padding-top: 5px;
     font-size: 15px;
     border: none;
+    
   }
 
 }
