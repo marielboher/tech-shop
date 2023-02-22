@@ -1229,7 +1229,7 @@ footer a:hover {
     background-image: url("../multimedia/button.png");
     background-color: transparent;
     border: 0;
-    padding: 4px 80px 14px 65px;
+    padding: 14px 80px 14px 65px;
     font-weight: 600;
     font-size: 14px;
   }
