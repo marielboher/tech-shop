@@ -1206,10 +1206,12 @@ footer a:hover {
 @media screen and (max-width: 480px) {
 
   .hero {
-    padding: 0px;
+    padding-left: 20px;
     background-position: 55%;
+    margin: 0;
+    padding: 50px;
+    margin-top: 10px;
   }
-
   .img {
     display: none;
   }
@@ -1223,6 +1225,15 @@ footer a:hover {
     display: flex;
     flex-direction: column;
   }
+  .text-hero button {
+    background-image: url("../multimedia/button.png");
+    background-color: transparent;
+    border: 0;
+    padding: 4px 80px 14px 65px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
 
   .pro-container {
     display: flex;
@@ -1369,6 +1380,8 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
+    margin-right: 25px;
   }
   .table{
     font-size: 13px;
